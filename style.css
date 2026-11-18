@@ -1,0 +1,365 @@
+/* Обнуление отступов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f5ece1; /* Бежевый фон сайта */
+    padding: 20px 0;
+}
+
+/* Контейнер страницы */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Шапка сайта */
+.header {
+    background-color: #8b5a2b; /* Коричневая шапка */
+    color: #ffffff;
+    padding: 25px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.header h1 {
+    font-size: 2.2rem;
+}
+
+/* Горизонтальная навигация */
+.navigation {
+    margin-bottom: 25px;
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+    background-color: #34495e;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.navigation ul li {
+    flex: 1;
+    text-align: center;
+}
+
+.navigation ul li a {
+    display: block;
+    padding: 12px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.navigation ul li a:hover {
+    background-color: #a0522d;
+}
+
+/* Двухколоночный Flexbox для контента */
+.content-wrapper {
+    display: flex;
+    gap: 30px; /* Отступ между колонками */
+    margin-bottom: 25px;
+}
+
+/* Левая основная колонка */
+.main-content {
+    flex: 2; /* Занимает больше места */
+    text-align: left;
+}
+
+.main-content h2 {
+    color: #8b5a2b;
+    font-size: 1.6rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #f5ece1;
+    padding-bottom: 5px;
+}
+
+.main-content p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.main-content ul {
+    list-style-type: square;
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+.main-content ul li {
+    margin-bottom: 8px;
+}
+
+/* Настройка изображения */
+.main-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-top: 15px;
+}
+
+/* Правая колонка (Сайдбар) */
+.sidebar {
+    flex: 1; /* Занимает меньше места */
+    background-color: #fbf8f3;
+    padding: 20px;
+    border: 1px solid #e8dcce;
+    border-radius: 8px;
+    text-align: center;
+    align-self: flex-start;
+}
+
+.sidebar h3 {
+    color: #8b5a2b;
+    margin-bottom: 12px;
+}
+
+.sidebar p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.contacts-block {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px dashed #e8dcce;
+    text-align: left;
+}
+
+.contacts-block h4 {
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.contacts-block p {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+/* Кнопка */
+button {
+    background-color: #a0522d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #8b5a2b;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Футер */
+.footer {
+    background-color: #34495e;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    .navigation ul {
+        flex-direction: column;
+    }
+}
+
+
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6; /* Удобочитаемый межстрочный интервал */
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    background-color: #fcfcfc;
+}
+
+/* Настройка контейнера-обертки */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Шапка проекта */
+.header {
+    text-align: center;
+    background-color: #ba7a54; /* Коричневый оттенок с макета */
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+/* Заголовки и абзацы */
+h2, h3 {
+    color: #2c1a10;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p, li {
+    font-size: 16px;
+    margin-bottom: 15px; /* Отступы для легкого чтения */
+}
+
+
+a {
+    color: #ba7a54;
+    text-decoration: none;
+    transition: all 0.3s ease; /* Плавный переход */
+}
+
+/* Эффект наведения на ссылки */
+a:hover {
+    color: #d99468;
+    text-shadow: 0px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Эффект нажатия на ссылки */
+a:active {
+    color: #8c5333;
+}
+
+/* Стили для кнопки «Забронировать тур» (внутри aside) */
+aside button, .sidebar-block button {
+    background-color: #ba7a54;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+/* Наведение на кнопку */
+aside button:hover {
+    background-color: #d99468;
+}
+
+/* Нажатие на кнопку */
+aside button:active {
+    transform: scale(0.98); /* Эффект клика */
+}
+
+
+/* Пункт 3: Десктопное меню — ГОРИЗОНТАЛЬНОЕ */
+.navigation ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+    background-color: #3b5998; /* Синеватый блок меню с макета */
+    border-radius: 4px;
+}
+
+.navigation li {
+    margin: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: 12px 25px;
+    color: white;
+    font-weight: 500;
+}
+
+.navigation a:hover {
+    background-color: #4a6ea5;
+}
+
+/* Основная двухколоночная структура (Flexbox) */
+.content-wrapper {
+    display: flex;
+    gap: 30px;
+}
+
+/* Левая основная колонка */
+.main-content {
+    flex: 3;
+}
+
+/* Правая колонка (сайдбар) */
+aside {
+    flex: 1;
+    background-color: #f7f5f0;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    height: fit-content;
+}
+
+img {
+    max-width: 100%;  /* Масштабирование */
+    height: auto;     /* Сохранение пропорций */
+    display: block;
+    margin: 20px 0;   /* Отступы сверху и снизу */
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 768px) {
+   
+    /* Колоночная структура перестраивается в один вертикальный ряд */
+    .content-wrapper {
+        flex-direction: column;
+    }
+   
+    /* Пункт 3: Меню становится ВЕРТИКАЛЬНЫМ на смартфонах */
+    .navigation ul {
+        flex-direction: column;
+        text-align: center;
+    }
+   
+    .navigation a {
+        padding: 10px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+   
+    /* Корректировка размеров шрифта под экраны мобильных телефонов */
+    .header h1 {
+        font-size: 22px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    p, li {
+        font-size: 15px;
+    }
+}
